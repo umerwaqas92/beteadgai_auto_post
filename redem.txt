@@ -1,0 +1,12 @@
+
+https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-long-lived/
+
+https://docs.google.com/document/d/1MUN672MGboszhW_8qgtqhMzkRhiAD1JHScWijmmEUEk/edit
+
+curl -i -X GET "https://graph.facebook.com/v17.0/oauth/access_token?grant_type=fb_exchange_token&client_id=676799517654384&client_secret=3308a438cd6628917dbd064dcb7c878c&fb_exchange_token=EAAJni6rVfXABO0pnTbkaqJzwd0wJdGqiBZBBMkht0ZBpjxCPuTXUHbvBVE3m0aM6oYn2WXgwh92FgMSWhlAQzMV5qLoSVcCTwZCikn2bRqZBtVxt85tpipDTtxZBO5VNsqwSAIbIBZCSSA4Y9EtHxb7x9A6vTIdCcAnU9JW691Vpk6rZBUhxGEDWRBUrDSF6adjZBtLiX4oMWZAw9D2S6DDbUiCp7"
+
+
+https://developers.facebook.com/tools/debug/accesstoken/?access_token=EAAJni6rVfXABOyG9SDHjZCZAn1dtPDghQtsKFt3iWJ9oVjOKVNw7aHZB39WgUpbRyvH8Ci61ZB8VPgTGYMvFHXRVeZA5oaBCaKWkA9VfAyg7qZAPsMpUnsJXHLbSZColZA1i0VylTqYXZCSLlHnrEoOZBb2omSPBwbONnLZCaMWa0aYzZCBMwcTpjUeeWsWRnLaWw6kZD&version=v17.0
+
+
+https://www.freeprivacypolicy.com/live/e7f64d7f-112b-4cdc-8290-192156ca8703

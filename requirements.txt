@@ -1,6 +1,5 @@
 newsapi-python
 instagrapi
-ssl
 nltk
 Pillow==9.0.1
 textwrap3

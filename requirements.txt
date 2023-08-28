@@ -2,7 +2,6 @@ newsapi-python
 instagrapi
 ssl
 nltk
-Pillow
+Pillow==9.0.1
 textwrap3
 facebook-sdk
-newsapi-python

@@ -5,3 +5,4 @@ nltk
 Pillow
 textwrap3
 facebook-sdk
+newsapi-python

@@ -7,7 +7,7 @@ def getNewAPIOrg(query):
 
     newsapi = NewsApiClient(api_key=config.get_config("news_api_key"))
 
-    top_headlines = newsapi.get_top_headlines(q=query)
+    top_headlines = newsapi.get_everything(q=query)
     articles = top_headlines["articles"]
 
     for article in articles:

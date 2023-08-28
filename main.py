@@ -22,7 +22,7 @@ cl = Client()
 username = get_config("insta_username")
 password = get_config("insta_password")
 
-cl.login(username=username, password=password)
+# cl.login(username=username, password=password)
 
 
 
@@ -104,7 +104,7 @@ for article in articles:
        
         # print("file_name:", file_name)
         photo_id=post_to_facebook(file_name, article.description, article.url)
-        photo_id_story=post_insagram(file_name, article.description)
+        # photo_id_story=post_insagram(file_name, article.description)
         # post_insagram(cl,file_name,file_name_story ,article.description, article.url)
         os.remove(file_name)
 

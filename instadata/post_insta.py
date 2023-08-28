@@ -8,7 +8,7 @@ import get_tags as tags
 
 def post_insagram(cl,photo_path,photo_story_path, message,comment):
     tags_list=tags.extract_tags(message)
-    follow_msg="Stay up-to-date with the latest in Artificial Intelligence and new product releases! Follow and like our page 'Artificially Intelligent News' now for the most cutting-edge updates and insights!"
+    follow_msg="Visit www.BetEdge.ai for the most advanced betting edge."
     
     media = cl.photo_upload(
         photo_path,

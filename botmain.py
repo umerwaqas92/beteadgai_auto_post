@@ -7,7 +7,7 @@ from genrate_image import *
 from post_to_facbook import post_to_facebook
 import os
 from instagrapi import Client
-from post_insta import post_insagram
+from instadata.post_insta import post_insagram
 from app_data.manage_app_config import * 
 
 from app_data.news_model import MyNewsModel
@@ -16,13 +16,8 @@ import Newsapiorg
 import worldnewsapi
 import news_database as db
 # Create an instance of the bot
-cl = Client()
+from instadata.manageinsta import cl
 
-# Log in to your Instagram account
-username = get_config("insta_username")
-password = get_config("insta_password")
-
-# cl.login(username=username, password=password)
 
 
 
@@ -100,13 +95,15 @@ for article in articles:
 
 
         file_name = generate_news_image(article.urlToImage, news_with_asterisks)
-        # file_name_story=generate_news_image_potraite(article.urlToImage, news_with_asterisks,None)
+        file_name_story=generate_news_image_potraite(article.urlToImage, news_with_asterisks,None)
        
         # print("file_name:", file_name)
         photo_id=post_to_facebook(file_name, article.description, article.url)
-        # photo_id_story=post_insagram(file_name, article.description)
-        # post_insagram(cl,file_name,file_name_story ,article.description, article.url)
+        # photo_id_story=post_insagram(file_name_story, article.description)
+        post_insagram(cl,file_name,file_name_story ,article.description, article.url)
         os.remove(file_name)
+        os.remove(file_name_story)
+
 
 
         

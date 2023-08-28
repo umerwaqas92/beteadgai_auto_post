@@ -2,12 +2,12 @@ from newsapi import NewsApiClient
 import app_data.manage_app_config as config
 from app_data.news_model import MyNewsModel
 
-def getNewAPIOrg():
+def getNewAPIOrg(query):
     list_of_news = []
 
     newsapi = NewsApiClient(api_key=config.get_config("news_api_key"))
 
-    top_headlines = newsapi.get_everything(q=config.get_config("q"))
+    top_headlines = newsapi.get_top_headlines(q=query)
     articles = top_headlines["articles"]
 
     for article in articles:

@@ -30,7 +30,12 @@ articles = []
 
 
 # go_news_list=GoNewsGet.GoNewsGet()
-news_list=Newsapiorg.getNewAPIOrg()
+news_list=Newsapiorg.getNewAPIOrg(query="sports betting")
+news_list2=Newsapiorg.getNewAPIOrg(query="sports")
+
+for news in news_list2:
+    news_list.append(news)
+
 # worldnewsapi_news_list=worldnewsapi.search_news_worldnewsapi()
 
 # for news in go_news_list:

@@ -15,10 +15,10 @@ def post_to_facebook(photo_path, message,comment):
     graph = facebook.GraphAPI(access_token)
 
     tags_list=tags.extract_tags(message)
-    follow_msg="Stay up-to-date with the latest in Sports batting! Follow and like our page 'BetEdge AI' now for the most cutting-edge updates and insights!"
+    follow_msg="Visit www.BetEdge.ai for the most advanced betting edge."
 
 
-
+    # message="Posted by BetEdge AI\n"+message
     # Upload the image
     photo = graph.put_photo(image=open(photo_path, 'rb'), album_path='me/photos',message=message+"\n\n"+follow_msg+"\n"+tags_list,  published=True)
 

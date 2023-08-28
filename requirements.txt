@@ -1,0 +1,7 @@
+newsapi-python
+instagrapi
+ssl
+nltk
+Pillow
+textwrap3
+facebook-sdk

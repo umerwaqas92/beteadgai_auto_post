@@ -98,7 +98,7 @@ for article in articles:
         # file_name_story=generate_news_image_potraite(article.urlToImage, news_with_asterisks,None)
        
         # print("file_name:", file_name)
-        # photo_id=post_to_facebook(file_name, article.description, article.url)
+        photo_id=post_to_facebook(file_name, article.description, article.url)
         # photo_id_story=post_insagram(file_name_story, article.description)
         # post_insagram(cl,file_name,file_name_story ,article.description, article.url)
         os.remove(file_name)
